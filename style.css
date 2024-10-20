@@ -1,0 +1,125 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background: linear-gradient(
+    to right,
+    #00c6ff,
+    #0072ff
+  ); /* Gradient background */
+}
+
+/* Pricing section styling */
+.pricing-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #fff; /* Title text color */
+}
+
+/* Pricing container */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual pricing card */
+.pricing-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Typewriter effect styling */
+#typewriter {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #4a90e2;
+  border-right: 2px solid #4a90e2;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 12ch; /* Control width of typed text */
+}
+
+/* Price section styling */
+.price {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.price span {
+  font-weight: bold;
+  color: #333;
+}
+
+.price p {
+  font-size: 18px;
+  color: #777;
+}
+
+/* Features list */
+.features {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.features li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.features i {
+  color: #4a90e2;
+  margin-right: 10px;
+}
+
+/* Get started button */
+.btn {
+  text-decoration: none;
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #357abd;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 90%;
+  }
+}
